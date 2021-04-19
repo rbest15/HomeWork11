@@ -19,8 +19,16 @@ class TestHomework11Tests: XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        XCTAssert(Validator.isValidPassword("qweqweqwe") == false)
+        XCTAssert(Validator.isValidPassword("123qweqwe") == false)
+        XCTAssert(Validator.isValidPassword("123QweqweqweQ") == true)
+        XCTAssert(Validator.isValidPassword("1qQ") == false)
+        
+        XCTAssert(Validator.isValidEmail("rbest") == false)
+        XCTAssert(Validator.isValidEmail("rbest@mail.") == false)
+        XCTAssert(Validator.isValidEmail("rbestmail.ru") == false)
+        XCTAssert(Validator.isValidEmail("rbest@mail.ru") == true)
     }
 
     func testPerformanceExample() throws {

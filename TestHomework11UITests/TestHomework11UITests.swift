@@ -22,13 +22,27 @@ class TestHomework11UITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func test1() throws {
         let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.activate()
+        app.textFields["Login"].tap()
+        app.textFields["Login"].typeText("1")
+        app.textFields["Password"].tap()
+        app.textFields["Password"].typeText("2")
+        app/*@START_MENU_TOKEN@*/.staticTexts["Enter"]/*[[".buttons[\"Enter\"].staticTexts[\"Enter\"]",".staticTexts[\"Enter\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.alerts["Enter valid email"].scrollViews.otherElements.buttons["Ok"].tap()
+    }
+    
+    func test2() throws {
+        
+        let app = XCUIApplication()
+        app.activate()
+        app.textFields["Login"].tap()
+        app.textFields["Login"].typeText("qwe@qwe.qwe")
+        app.textFields["Password"].tap()
+        app.textFields["Password"].typeText("123Qweqwe")
+        app/*@START_MENU_TOKEN@*/.staticTexts["Enter"]/*[[".buttons[\"Enter\"].staticTexts[\"Enter\"]",".staticTexts[\"Enter\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+    
     }
 
     func testLaunchPerformance() throws {

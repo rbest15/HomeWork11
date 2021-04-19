@@ -15,6 +15,8 @@
 		6F61992A262D873D00F86349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F619928262D873D00F86349 /* LaunchScreen.storyboard */; };
 		6F619935262D873D00F86349 /* TestHomework11Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F619934262D873D00F86349 /* TestHomework11Tests.swift */; };
 		6F619940262D873D00F86349 /* TestHomework11UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F61993F262D873D00F86349 /* TestHomework11UITests.swift */; };
+		6F619951262DA4F200F86349 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F619950262DA4F200F86349 /* Validator.swift */; };
+		6F619952262DA4F200F86349 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F619950262DA4F200F86349 /* Validator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		6F61993B262D873D00F86349 /* TestHomework11UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHomework11UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F61993F262D873D00F86349 /* TestHomework11UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHomework11UITests.swift; sourceTree = "<group>"; };
 		6F619941262D873D00F86349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F619950262DA4F200F86349 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 				6F61991D262D873500F86349 /* AppDelegate.swift */,
 				6F61991F262D873500F86349 /* SceneDelegate.swift */,
 				6F619921262D873500F86349 /* ViewController.swift */,
+				6F619950262DA4F200F86349 /* Validator.swift */,
 				6F619923262D873500F86349 /* Main.storyboard */,
 				6F619926262D873D00F86349 /* Assets.xcassets */,
 				6F619928262D873D00F86349 /* LaunchScreen.storyboard */,
@@ -258,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F619951262DA4F200F86349 /* Validator.swift in Sources */,
 				6F619922262D873500F86349 /* ViewController.swift in Sources */,
 				6F61991E262D873500F86349 /* AppDelegate.swift in Sources */,
 				6F619920262D873500F86349 /* SceneDelegate.swift in Sources */,
@@ -268,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F619952262DA4F200F86349 /* Validator.swift in Sources */,
 				6F619935262D873D00F86349 /* TestHomework11Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
