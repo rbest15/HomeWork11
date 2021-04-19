@@ -1,0 +1,20 @@
+PODS:
+  - BitriseTrace (1.7.30):
+    - BitriseTrace/Trace (= 1.7.30)
+  - BitriseTrace/Trace (1.7.30):
+    - BitriseTrace/TraceInternal
+  - BitriseTrace/TraceInternal (1.7.30)
+
+DEPENDENCIES:
+  - BitriseTrace
+
+SPEC REPOS:
+  trunk:
+    - BitriseTrace
+
+SPEC CHECKSUMS:
+  BitriseTrace: a5650d9f93ab35d684ed07c6947e9d40669ca746
+
+PODFILE CHECKSUM: d7c2404ad668e9fa9e6eb7ae65745c27ccf7ced6
+
+COCOAPODS: 1.9.1
