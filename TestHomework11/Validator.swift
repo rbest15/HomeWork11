@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 public class Validator {
     
@@ -12,5 +13,13 @@ public class Validator {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
+    }
+    
+    static public func checkText(_ tf1: UITextField, _ tf2: UITextField, _ butt: UIButton){
+        if tf1.hasText && tf2.hasText {
+            butt.isEnabled = true
+        } else {
+            butt.isEnabled = false
+        }
     }
 }

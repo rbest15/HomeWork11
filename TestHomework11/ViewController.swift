@@ -8,10 +8,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     
     @IBAction func login(_ sender: Any) {
-        checkText()
+        Validator.checkText(loginTextField, passwordTextField, enterButton)
     }
     @IBAction func pass(_ sender: Any) {
-        checkText()
+        Validator.checkText(loginTextField, passwordTextField, enterButton)
     }
     
     @IBAction func enterPressed(_ sender: Any) {
@@ -27,18 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    func checkText(){
-        if loginTextField.hasText && passwordTextField.hasText {
-            enterButton.isEnabled = true
-        } else {
-            enterButton.isEnabled = false
-        }
-    }
-    
 
-    
-
-    
     func alertError(){
         if !Validator.isValidEmail(loginTextField.text!){
             showAlert("Enter valid email")
